@@ -42,7 +42,7 @@ for epoch in range(epochs):
     Y = 1 / (1 + np.exp(-Z))
 
     # Scale target to [0,1]
-    T_scaled = T / 10.0
+    T_scaled = T / 10
 
     # Loss
     loss = 0.5 * np.mean((Y - T_scaled) ** 2)
